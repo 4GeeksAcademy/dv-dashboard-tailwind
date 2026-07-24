@@ -1,41 +1,56 @@
-# HTML Hello
+# 📊 Influencer Analytics Dashboard
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+Dashboard analítico para influencers construido únicamente con **HTML5 semántico** y **Tailwind CSS v4** (sin frameworks JS ni librerías externas).
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+## 🚀 Demo
 
-## What to do next?
+Este proyecto despliega un panel de control con métricas clave para la gestión de campañas de marketing de influencers, incluyendo:
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+- **KPIs Principales**: Comisiones, facturación, conversión global y alcance.
+- **Drivers**: Rendimiento por plataforma, funnel de conversión y rendimiento por producto.
+- **Detalles Operacionales**: Tabla de campañas, alertas e insights, y top métricas.
+
+## 🛠️ Requisitos
+
+- [Node.js](https://nodejs.org/) (v18 o superior) — necesario para `npx http-server`
+
+## ▶️ Cómo arrancar el proyecto
 
 ```bash
-$ pip3 install flask && python3 server.py
+# 1. Clona el repositorio
+git clone <url-del-repositorio>
+cd dv-dashboard-tailwind
+
+# 2. Inicia el servidor local con http-server
+npx http-server
 ```
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+Esto levantará el servidor en `http://localhost:8080` (por defecto). Abre esa URL en tu navegador para ver el dashboard.
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
+> **Nota**: No se requiere `npm install` ya que Tailwind CSS se carga vía CDN oficial en el `<head>` del documento.
+
+## 📁 Estructura del proyecto
+
+```
+dv-dashboard-tailwind/
+├── index.html       # Dashboard completo
+├── PROMPTS.md       # Guía de prompts para GitHub Copilot
+├── .gitignore       # Archivos ignorados por Git
+├── learn.json       # Configuración del proyecto 4Geeks
+├── server.py        # Servidor Python alternativo
+└── README.md        # Este archivo
 ```
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+## 🧩 Tecnologías
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+- **HTML5** semántico y accesible (SEO & GEO friendly)
+- **Tailwind CSS v4** vía CDN
+- **Google Fonts** (Inter)
+- Diseño **mobile first** y totalmente responsive
 
-### Contributors
+## 👤 Autor
 
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
+Desarrollado por **Deimian Vásquez**  
+[dvasquez@4geeksacademy.com](mailto:dvasquez@4geeksacademy.com)
 
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+© 2026 Todos los derechos reservados.
